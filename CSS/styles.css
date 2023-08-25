@@ -21,3 +21,22 @@ body {
 {
   font-size: 20px;
 }
+
+#cabecera
+{
+  background: lightsteelblue;
+  color:aliceblue;
+  margin: 0;
+  padding: 0.5em;
+  box-shadow: 0px 2px 30px 0px purple;
+  font-weight: bold;
+}
+
+#cabecera #tagline
+{
+padding: 0 0 0 1em;
+font-weight: normal;
+font-size: 0.8em;
+
+
+}
