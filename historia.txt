@@ -6,5 +6,6 @@ Hilary Mora tiene 21 años y nacio en Costa Rica,
 Yo soy la nueva colaboradora del proyecto, contribuyo a este proyecto open source
 
 Master 1
-
+Experimento 1
+Experimento 2 
 Hoy hablaremos de su vida
