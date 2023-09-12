@@ -7,9 +7,11 @@ Actualmente soy estudiante de Ingeniería Informática, estoy a solo unos meses 
 
 He adquirido un gusto apasionado en este mundo de la informática y me gustaría que juntos podamos ver mis  avances  🫀
 
-Creado por la increible Platzi Team nanydev
+
 -Creado por la increible Platzi Team nanydev
+
 -Incluye ejemplos en Windows, Linux y Mac
+
 -Disponible para todas las edades 
 
 
