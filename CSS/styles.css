@@ -1,5 +1,5 @@
 body {
-  background: #1e1f24;
+  background: white;
   color: rgb(8, 10, 10);
   text-align: center;
   font-family: Arial;
@@ -7,59 +7,129 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-#container
-{
-  width: 70%;
-  padding: 0;
-  text-align: left;
-  border: 1px solid#DDD;
+  max-width: 5000px;
   margin: 0 auto;
+  background-image: url("https://us.123rf.com/450wm/yamabikay/yamabikay1702/yamabikay170200099/71073592-fondo-azul-cielo-textura-de-alta-calidad-en-una-resoluci%C3%B3n-extremadamente-alta.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-#container h1
-{
-  font-size: 20px;
+.contenedor {
+  
+  position: relative;
+  width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
+  text-align: center; /* Centra el botón horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 200px;
 }
 
-#cabecera
-{
-  background:cornflowerblue;
-  color:aliceblue;
-  margin: 0;
-  padding: 0.5em;
-  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
-  font-weight: bold;
+/* Estilo para las imágenes */
+.imagen{
+  width: 100%; /* Ancho del 100% del contenedor */
+  height: 100%; /* Altura automática para mantener la proporción */
+  object-fit: cover;
+  object-position: bottom;
 }
 
-#cabecera #logo
-{
-  width: 20px;
-  vertical-align: middle;
+
+.button-new{
+  
+  /* Ajusta el botón al centro exacto */
+  color: #fff;
+  font-size: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: auto;
+  padding: 60px 160px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1pc;
 }
 
-#cabecera #tagline
-{
-padding: 0 0 0 1em;
-font-weight: normal;
-font-size: 0.8em;
+.begin{
+
+  color: black;
+  font-size: 100px;
+  background-color: #fff;
+  width: auto;
+  padding: 90px 500px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3pc;
+  white-space: nowrap; /* Evita el ajuste de texto en múltiples líneas */
+  font-family: 'Blinker', sans-serif;
+  position: absolute; /* Permite posicionar con respecto al contenedor */
+  top: 75%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%);
+
+ 
 
 }
 
-#post
-{
-  background: white;
-    padding: 1em;
+
+.text{
+  font-size: 150px; 
+  color: #fff;
+  margin-top: 20px; 
+  text-align: center;
+  font-weight: 400;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Blinker', sans-serif;
+
+
 }
 
-#footer
-{
-background:rgb(111, 155, 236);
+.contenedor-categorias{
 
-color: aliceblue;
-margin: 0;
-padding: 0;
-font-weight: bold;
-text-align: center;
+display: flex;
+justify-content: space-between;
+flex-direction:row;
+align-items: center;
+
+
+
+}
+
+.categoria{
+    
+    padding: 100px;
+    margin: 0 ;
+    font-size: 80px; 
+    color: #fff;
+    font-family: 'Blinker', sans-serif;
+    position: relative;
+    
+}
+.categoria:not(:last-child)::after{
+  content: "";
+  height: 50%;
+  width: 10px;
+  right: 0;
+transform: translate(50%, -50%);
+top: 50%;
+
+position: absolute;  
+background-color:rgba(255, 255, 255, 0.2);
+ 
+  
+}
+.cabecera{
+
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
 }
