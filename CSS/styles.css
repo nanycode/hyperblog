@@ -1,22 +1,18 @@
 body {
   background: white;
   color: rgb(8, 10, 10);
-  text-align: center;
   font-family: Arial;
-  font-size: 16px;
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  max-width: 5000px;
-  margin: 0 auto;
   background-image: url("https://us.123rf.com/450wm/yamabikay/yamabikay1702/yamabikay170200099/71073592-fondo-azul-cielo-textura-de-alta-calidad-en-una-resoluci%C3%B3n-extremadamente-alta.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-size: 18px;
 }
 
 .contenedor {
-  
   position: relative;
   width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
   text-align: center; /* Centra el botón horizontalmente */
@@ -24,112 +20,100 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 200px;
 }
 
 /* Estilo para las imágenes */
-.imagen{
-  width: 100%; /* Ancho del 100% del contenedor */
+.imagen {
+  width: 50vh; /* Ancho del 100% del contenedor */
   height: 100%; /* Altura automática para mantener la proporción */
   object-fit: cover;
   object-position: bottom;
 }
 
-
-.button-new{
-  
+.button-new {
   /* Ajusta el botón al centro exacto */
   color: #fff;
-  font-size: 60px;
   background-color: rgba(255, 255, 255, 0.2);
   width: auto;
-  padding: 60px 160px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 1pc;
+  border-radius: 0.5rem;
+  font-size: inherit;
 }
 
-.begin{
-
+.begin {
   color: black;
-  font-size: 100px;
   background-color: #fff;
   width: auto;
-  padding: 90px 500px;
+  padding: 10px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 3pc;
+  border-radius: 0.5rem;
   white-space: nowrap; /* Evita el ajuste de texto en múltiples líneas */
-  font-family: 'Blinker', sans-serif;
+  font-family: "Blinker", sans-serif;
   position: absolute; /* Permite posicionar con respecto al contenedor */
-  top: 75%; /* Centra verticalmente */
   left: 50%; /* Centra horizontalmente */
-  transform: translate(-50%, -50%);
-
- 
-
+  transform: translate(-50%, 0);
+  font-size: inherit;
+  position: absolute;
+  bottom: 15%;
+}
+.begin:hover{
+ color:#D3D3D3 ;
 }
 
-
-.text{
-  font-size: 150px; 
+.text {
   color: #fff;
-  margin-top: 20px; 
+  margin-top: 20px;
   text-align: center;
   font-weight: 400;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Blinker', sans-serif;
-
-
+  font-family: "Blinker", sans-serif;
 }
 
-.contenedor-categorias{
-
-display: flex;
-justify-content: space-between;
-flex-direction:row;
-align-items: center;
-
-
-
+.contenedor-categorias {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
-.categoria{
-    
-    padding: 100px;
-    margin: 0 ;
-    font-size: 80px; 
-    color: #fff;
-    font-family: 'Blinker', sans-serif;
-    position: relative;
-    
+.categoria {
+  padding: 0 25px;
+  margin: 0;
+  color: #fff;
+  font-family: "Blinker", sans-serif;
+  position: relative;
 }
-.categoria:not(:last-child)::after{
+.categoria:not(:last-child)::after {
   content: "";
   height: 50%;
-  width: 10px;
+  width: 4px;
   right: 0;
-transform: translate(50%, -50%);
-top: 50%;
-
-position: absolute;  
-background-color:rgba(255, 255, 255, 0.2);
- 
-  
-}
-.cabecera{
-
+  transform: translate(50%, -50%);
+  top: 50%;
   position: absolute;
-  top: 50%; 
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.cabecera {
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+}
 
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas (tabletas) */
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para pantallas aún más pequeñas (teléfonos móviles) */
 }
