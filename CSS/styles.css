@@ -13,7 +13,7 @@ body {
 }
 
 .contenedor {
-  position: relative;
+ 
   width: 100%; /* Ajusta el ancho del contenedor según tus necesidades */
   text-align: center; /* Centra el botón horizontalmente */
   display: flex;
@@ -28,6 +28,7 @@ body {
   height: 100%; /* Altura automática para mantener la proporción */
   object-fit: cover;
   object-position: bottom;
+  
 }
 
 .button-new {
@@ -80,6 +81,19 @@ body {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+}
+.logo {
+  
+  position: absolute;
+  top: 0;
+  left: 28%;
+ 
+}
+
+/* Estilos adicionales para el logo si es necesario */
+.logo img {
+  max-width: 70px; /* Ajusta el ancho de la imagen según tus preferencias */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
 }
 
 .categoria {
